@@ -2,8 +2,8 @@ import React from 'react';
 import { Provider } from 'rendition';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { Nav } from './components/Nav';
-import { Devices } from './components/Devices';
+import { Nav } from './components/nav/Nav';
+import { Devices } from './components/devices/Devices';
 
 const GlobalStyle = createGlobalStyle([], {
   '*': {
