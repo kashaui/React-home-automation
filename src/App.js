@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 import { Breadcrumbs } from './components/breadcrumbs';
-import { Devices } from './components/devices';
+import Devices from './components/devices';
 import { Nav } from './components/nav';
 import { Provider } from 'rendition';
 import React from 'react';
@@ -20,6 +20,15 @@ const GlobalStyle = createGlobalStyle([], {
   },
   '#root': {
     minHeight: '100vh',
+  },
+  '.ml-0': {
+    marginLeft: '0px !important',
+  },
+  '.mr-0': {
+    marginRight: '0px !important',
+  },
+  '.user-select-none': {
+    userSelect: 'none',
   },
 });
 
