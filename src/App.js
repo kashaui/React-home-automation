@@ -1,9 +1,10 @@
-import React from 'react';
-import { Provider } from 'rendition';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { Nav } from './components/nav/Nav';
-import { Devices } from './components/devices/Devices';
+import { Breadcrumbs } from './components/breadcrumbs';
+import { Devices } from './components/devices';
+import { Nav } from './components/nav';
+import { Provider } from 'rendition';
+import React from 'react';
 
 const GlobalStyle = createGlobalStyle([], {
   '*': {
@@ -34,7 +35,7 @@ export const App = () => {
       <GlobalStyle />
 
       <Nav />
-
+      <Breadcrumbs />
       <Devices />
     </FullHeightProvider>
   );
